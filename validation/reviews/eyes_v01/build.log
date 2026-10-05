@@ -1,0 +1,34 @@
+00:04.687  blend            | Read blend: "D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\candidate.blend"
+00:32.812  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\baseline\VAL_FRONT.png'
+00:35.125  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\baseline\VAL_LEFT.png'
+00:35.843  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\baseline\VAL_BACK.png'
+00:36.437  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\baseline\VAL_3Q.png'
+02:29.875  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\live_neutral\VAL_FRONT.png'
+02:30.781  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\live_neutral\VAL_LEFT.png'
+02:31.671  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\live_neutral\VAL_BACK.png'
+02:32.515  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\live_neutral\VAL_3Q.png'
+02:33.484  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\blink\VAL_FRONT.png'
+02:34.359  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\blink\VAL_LEFT.png'
+02:35.250  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\blink\VAL_BACK.png'
+02:36.046  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\blink\VAL_3Q.png'
+02:37.093  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\beak_open\VAL_FRONT.png'
+02:37.984  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\beak_open\VAL_LEFT.png'
+02:38.875  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\beak_open\VAL_BACK.png'
+02:39.703  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\beak_open\VAL_3Q.png'
+02:40.718  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_left\VAL_FRONT.png'
+02:41.625  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_left\VAL_LEFT.png'
+02:42.531  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_left\VAL_BACK.png'
+02:43.343  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_left\VAL_3Q.png'
+02:44.375  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_right\VAL_FRONT.png'
+02:45.265  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_right\VAL_LEFT.png'
+02:46.156  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_right\VAL_BACK.png'
+02:46.984  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_right\VAL_3Q.png'
+02:48.015  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_both\VAL_FRONT.png'
+02:48.906  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_both\VAL_LEFT.png'
+02:49.812  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_both\VAL_BACK.png'
+02:50.640  render           | Saved: 'D:\Codex\Owli-Tech\Owli-3d-2\tmp\goal19\run-20261005\renders\gesture_both\VAL_3Q.png'
+Info: Saved as "candidate.blend"
+EYES EVIDENCE OK: build
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

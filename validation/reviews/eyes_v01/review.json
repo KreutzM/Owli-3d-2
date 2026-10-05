@@ -1,0 +1,116 @@
+{
+  "gate_version": 2,
+  "milestone": "eyes_v01",
+  "status": "eyes_lookdev_accepted",
+  "scene_sha256": "8c1bcd9474281cc8c0509c50606016973db582f94771df25bdc30f505b76bc9b",
+  "verification_sha256": "0e7ce7b7c8ce7fd819754e7fccec07211705b58171abbd7403fd9fd26b2f6bf5",
+  "reference_authority": [
+    {
+      "file": "00_original_logo.png",
+      "rank": 1
+    },
+    {
+      "file": "07_turnaround_technical.png",
+      "rank": 2
+    },
+    {
+      "file": "08_parts_lookdev_technical.png",
+      "rank": 3
+    }
+  ],
+  "views": {
+    "VAL_FRONT": {
+      "status": "pass",
+      "reason": "Cream face/small dark pupils/varied cyan iris/compact catches; integrated lids close central navy gap. Remaining smooth narrow chest trims explicitly F01 in40."
+    },
+    "VAL_LEFT": {
+      "status": "pass",
+      "reason": "Convex glossy eye after justified -6mm depth shift, restrained rim/integrated cream lid seat; original mask/tuft/wing/perch3+1 profile preserved. Nostrils remain F02."
+    },
+    "VAL_BACK": {
+      "status": "pass",
+      "reason": "Eye revisions introduce no rear feature; protected body/wing/tail/tuft and grip silhouettes stay unchanged."
+    },
+    "VAL_3Q": {
+      "status": "pass",
+      "reason": "Friendly coherent pupils, optical depth/subtle branch network/integrated mask-lid transition with exact studio. Chest distribution and absent nostrils remain named40 work."
+    }
+  },
+  "criteria": {
+    "separate_optical_layers": {
+      "status": "pass",
+      "reason": "Actual editable Globe/Iris/Pupil/Cornea, radial spacing, no layer intersections; final fixed front/profile/3Q show convex glossy depth."
+    },
+    "deep_blue_cyan_lower_iris": {
+      "status": "pass",
+      "reason": "Actual00/08: navy upper iris, varied blue/cyan curved lower crescent and restricted pale/gold perimeter retain logo identity without homogeneous rings."
+    },
+    "dark_readable_pupils": {
+      "status": "pass",
+      "reason": "Measured radius ratio .251854332; small dark pupils inside shaded iris remain distinct, centered neutral and coherent in actual +/-12-degree gaze."
+    },
+    "controlled_cornea_catchlights": {
+      "status": "pass",
+      "reason": "Compact actual view-dependent studio catches replace broad gray patches; directional reflection cores/capped front Fresnel restrain profile dominance with exact studio."
+    },
+    "subtle_iris_network": {
+      "status": "pass",
+      "reason": "13 nodes/10 branched local-space links follow aim, leave pupils clear, add no collision geometry; subtle at whole-character scale, readable in details."
+    },
+    "F03_ratio_projection_rims": {
+      "status": "pass",
+      "reason": "Compared00 >07 >08: smaller pupils, justified -6mm Y depth with exact X/Z spacing, local49mm Globe/50.8mm Cornea envelopes preserved, soft limbus/integrated lid boundary."
+    },
+    "friendly_mask_four_views": {
+      "status": "pass",
+      "reason": "Primary and independent actual four-view review: cream mask/friendly eyes/coherent profile; both masks and perched3+1 anatomy exact, no rear feature."
+    },
+    "material_values_justified": {
+      "status": "pass",
+      "reason": "Actual four graphs metallic0/roughness .04-.10/IOR1.376; gain32/power384/radiance threshold/Fresnel cap/lower emission .4+.65 are justified documented Eevee stylization."
+    },
+    "function_history_preserved": {
+      "status": "pass",
+      "reason": "Four actual workers/exact30 fields/RGBA/repeat full states/normals; full function passes;90 protected states/3pivots/localGlobeCornea,626 historical/145archive exact."
+    },
+    "F03_reflex_dominance": {
+      "status": "pass",
+      "reason": "Actual final front/profile/3Q and old/new details show compact dominant catches, visible pupils/iris, restrained rim and no broad gray patches obscuring gaze/network."
+    },
+    "F03_iris_variation": {
+      "status": "pass",
+      "reason": "Actual iris-angle modulation varies curved lower brightness/color against00/08, preserving upper shade, pale cyan lower crescent and narrow warm logo accent."
+    },
+    "F03_network_branching": {
+      "status": "pass",
+      "reason": "Lower-inner multi-branch motif and varied nodes replace the earlier evenly linked chain; restrained brightness/unobscured pupils preserve reference identity."
+    },
+    "F03_lid_integration": {
+      "status": "pass",
+      "reason": "Four tapered lids/authored radial normals plus actual #37 X-only bridge close medial navy gap and inflated-ring shading; fixed four views accepted; actual41 normal poses/unchanged .3mm clearance pass."
+    }
+  },
+  "blocking_findings": [],
+  "evidence_sha256": {
+    "VAL_3Q.png": "725c15f2e6ebc1d9aa6ae8e86f34201872bd1b70aab30b1853a9d231ae536f3b",
+    "VAL_3Q_comparison.png": "a467fc260ed5b4a24169abfeb6205728f41f0f01a7929e65834d747b3e6ab2df",
+    "VAL_BACK.png": "283c5830e2b4c51dcab05ff2d050122672eaff0e1e07315ac0f14686b510e4c9",
+    "VAL_BACK_comparison.png": "382eb1c7dbcec06ec1852693bab0d854cc8f626c9cf31cbe6a222abd647a2cae",
+    "VAL_FRONT.png": "06f6e96e79f9a0c787b88190c6aceac35fbbd1e8079722d760be8d1d3273ab59",
+    "VAL_FRONT_comparison.png": "17cc6b32bef5050b8491bd4f4aa694b1973e4a06fc75ed7581eebd5b722013bd",
+    "VAL_LEFT.png": "0cb8e0c8b31beb445995813c83a8af847e72a8b42fbe6b862882a9ccf6f28afc",
+    "VAL_LEFT_comparison.png": "592824125894f4f79f5eeebd0330d4c0d6f0957383d5adceab32d2062cb08af0",
+    "build_checks.json": "47118c587c2522be7e98c35f55fbb10e7c71df5d2071ce9c60e90cf03b6c00e1",
+    "contact_sheet.png": "d0e8e290ec39e029a1d51509113a28beac2713a6e9af7f0e622437c47cfbde39",
+    "eyes_before_after.png": "7adeb5ec398c0b4850aaa4b6dc3e5332a857b0d9a1a06892630b05317601e141",
+    "eyes_refinement_before_after.png": "1fee1238629e44dac2b07feaf93f444919a48a2af145c09af16262183f1a3993",
+    "independent-technical-evidence.json": "1dbe4fecab1845c1fbf22c74e1b2f4d4c58af4cfc59e3bfb16ac38a5288fff7c",
+    "independent-technical-review.md": "34e18bedfe275d14acf24757f798fd13ea92cc358bf02e189278a574117a8da4",
+    "independent-visual-review.md": "b31af1a1812dbbb184c797dbd21f213314eb8103c3f4aed9dab88200b858b1ea",
+    "reload_a_checks.json": "793af09e5732585ab43c28eead78b9b2112a0517ca425641dad2206aea73c6e0",
+    "reload_b_checks.json": "fe151bd5156f5e782fbaf0e1f242277024a91d11b8b9ead5b734c25918c0966c",
+    "report.md": "8c185a57889749eaf5e76a435740681c8539cceef83d731907bf4ce81f88b8d0",
+    "saved_build_checks.json": "fb864baad0ca2d9393450c7d2c90adf368004e7582ef73f3d529d7166f09b9fa",
+    "verification.json": "0e7ce7b7c8ce7fd819754e7fccec07211705b58171abbd7403fd9fd26b2f6bf5"
+  }
+}

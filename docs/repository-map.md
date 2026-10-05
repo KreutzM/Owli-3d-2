@@ -13,7 +13,7 @@ dass ihr Produktionsgoal abgeschlossen ist.
 | `design/proportions.json` | eingefrorene grobe Maße und Ringschemata |
 | `design/silhouette_freeze.json` | manuelle grobe Vieransichtenentscheidung mit Quellenbindungen |
 | `design/head_body.json`, `face.json`, `beak.json`, `feet.json` | implementierte Meilensteinparameter |
-| `blender/scene/` | LFS-Szenen; aktueller #18-Stand `owli_materials_v01.blend`; #6/#37 und frühere Szenen bleiben historische Baselines |
+| `blender/scene/` | LFS-Szenen; aktueller #19-Stand `owli_eyes_v01.blend`; #18-Materialszene bleibt historische Baseline; #6/#37 und frühere Szenen bleiben historische Baselines |
 | `validation/reference_views.json`, `checklist.json` | Studio und unveränderte Pflichtansichten / visuelle Checks |
 | `validation/reviews/<milestone>/` | dauerhafte Szenen-/Quellen-/Rendernachweise und separate manuelle Entscheidung |
 | `validation/history/pre_feet_v01/` | bytegenaue Original-Metadaten und geprüfte historische Quellenumbindung |
@@ -38,11 +38,16 @@ dass ihr Produktionsgoal abgeschlossen ist.
 | `scripts/materials_review.py`, `materials_gate.py`, `materials_contracts.py` | isolierter Producer, strikte Abnahme und 548 Vorgängeranker |
 | `validation/reviews/materials_v01/` | aktueller Bericht, Brustvergleich, 40 Evidenzbilder, vier feste Ansichten und unabhängige Berichte |
 | `scripts/blender/legacy/50_materials.py`, `validation/history/pre_materials_v01/` | bytegenaue Stage50-Sicherung aus Git a863493 |
+| `design/eyes_lookdev.json`, `scripts/blender/eyes_geometry.py` | #19: getrennte Shader, Pupille, Irisnetzwerk, begrenzte Augentiefe und Lid-/Brückenintegration |
+| `scripts/blender/eyes_checks.py`, `eyes_evidence.py` | Vollzustand/UV/Attribute/lokale Augenformen/Corner-Normalen, optische Geometrie und vier echte Worker |
+| `scripts/eyes_contracts.py`, `eyes_gate.py`, `eyes_review.py` | #19-Producer/Gate, 626 Vorgängeranker und 145 Bindungen des früheren lokalen Kandidaten |
+| `validation/reviews/eyes_v01/` | Aktuelle vier Ansichten, Augendetails, Bewegungsbelege und unabhängige Reviews |
+| `validation/history/pre_eyes_refinement_v01/` | Unveränderte Szene, Quellen und Reviews des verworfenen lokalen Augenstands; keine aktuelle Freigabe |
 | `scripts/blender/60_rig.py` | ungewichtetes Gerüst; keine finale Rig-Deformation |
 | `scripts/blender/90_validation.py`, `validation_setup.py`, `verify_validation_setup.py` | feste Kameras/Lichter, Framing, Rendering und Studio-Prüfung |
 | `scripts/blender/legacy/40_feet_perch.py` | ursprünglicher Guide-Code, unverändert für ältere Blockout-Rezepte |
 | `scripts/legacy/project.py` | historische CLI-Quellensicherung; nicht als aktuellen Runner verwenden |
-| `tests/`, `.github/workflows/validate.yml`, `requirements.txt`, `.gitattributes` | 83 Tests einschließlich 19 neuer Materials-Gate-Tests, Windows/Ubuntu-CI, Python-Abhängigkeiten, LF-/LFS-Regeln |
+| `tests/`, `.github/workflows/validate.yml`, `requirements.txt`, `.gitattributes` | Negative und positive Gate-Tests, Windows/Ubuntu-CI, Python-Abhängigkeiten, LF-/LFS-Regeln |
 
 ## Nachweise lesen, ohne sie neu zu erzeugen
 
@@ -50,6 +55,7 @@ dass ihr Produktionsgoal abgeschlossen ist.
 python scripts/project.py validate
 python scripts/feathers_gate.py
 python scripts/materials_gate.py
+python scripts/eyes_gate.py
 python -m unittest discover -s tests -v
 python -c "import sys; sys.path.insert(0,'scripts'); from delivery_gates import validate_feet_delivery; from review_fixes_gate import validate_review_fixes; print(validate_feet_delivery()); print(validate_review_fixes())"
 ```
@@ -63,5 +69,9 @@ Modells noch einen tatsächlichen Blender-Test nach einer Modelländerung.
 Die tatsächliche #6-Lieferung nutzt `design/wings_feathers.json`,
 `scripts/feathers_review.py`, `blender/scene/owli_feathers_v01.blend` und
 `validation/reviews/feathers_v01/`. Die aktuelle #18-Lieferung liegt separat in `owli_materials_v01.blend` und
-`materials_v01/`. Als Nächstes [Augenlookdev #19](next-goal-19.md) mit F-03,
-zusätzlich Nasenlöcher F-02 aus #40 vor #20. Historische Artefakte erhalten.
+`materials_v01/`. Die neue aktuelle #19-Lieferung liegt in `owli_eyes_v01.blend` und `eyes_v01/`.
+Den tatsächlichen Integrationsstatus von #19 über seinen GitHub-PR prüfen.
+Als Nächstes die verbleibende [Brust-/Schnabel-Nacharbeit](reviews/user-findings-2026-10-05.md) in #40 und
+[Fortsetzungsplan #40](next-goal-40.md) vor #20. F-01/F-02 bleiben offen;
+F-03 nur anhand der aktuellen Szene und ihrer separaten Abnahme beurteilen.
+Historische Artefakte und frühere Teilnachweise erhalten.

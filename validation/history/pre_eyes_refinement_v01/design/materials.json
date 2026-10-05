@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "palette_source": "original logo + approved lookdev",
+  "sampled_logo_colors": {
+    "deep_navy": "#0D1538",
+    "mid_blue": "#245E8D",
+    "cyan_reference": "#1EA0C8",
+    "cream": "#F4F3E7",
+    "orange_reference": "#F58C2B"
+  },
+  "materials": {
+    "feather_navy": {
+      "surface": "satin_matte",
+      "metallic": 0,
+      "roughness_target": [
+        0.45,
+        0.7
+      ]
+    },
+    "feather_blue_cyan": {
+      "surface": "satin_matte",
+      "metallic": 0,
+      "roughness_target": [
+        0.4,
+        0.65
+      ]
+    },
+    "face_cream": {
+      "surface": "soft_matte",
+      "metallic": 0,
+      "roughness_target": [
+        0.55,
+        0.75
+      ]
+    },
+    "beak_orange": {
+      "surface": "keratin_semigloss",
+      "metallic": 0,
+      "roughness_target": [
+        0.25,
+        0.4
+      ]
+    },
+    "claws_dark": {
+      "surface": "keratin_semigloss",
+      "metallic": 0,
+      "roughness_target": [
+        0.2,
+        0.38
+      ]
+    },
+    "eyes": {
+      "surface": "glossy_layered",
+      "metallic": 0,
+      "roughness_target": [
+        0.03,
+        0.12
+      ]
+    },
+    "forehead_symbol": {
+      "surface": "emissive_cyan",
+      "emission_strength_target": [
+        1.5,
+        4
+      ]
+    },
+    "perch": {
+      "surface": "brushed_metal",
+      "metallic": 0.85,
+      "roughness_target": [
+        0.2,
+        0.38
+      ]
+    }
+  },
+  "rule": "Do not make Owli's feathers or body metallic."
+}

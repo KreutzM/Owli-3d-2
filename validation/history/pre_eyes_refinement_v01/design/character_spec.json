@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "character": "Owli",
+  "type": "stylized tech owl mascot",
+  "v1_pose": "perched",
+  "flight_required": false,
+  "production_scale": {
+    "status": "provisional",
+    "character_height_m": 0.45,
+    "note": "May be rescaled globally; proportions matter more than absolute size."
+  },
+  "personality": [
+    "attentive",
+    "intelligent",
+    "curious",
+    "calm",
+    "friendly",
+    "competent"
+  ],
+  "anatomy": {
+    "head": {
+      "relative_importance": "dominant",
+      "shape": "rounded owl head with strong brow/ear-feather silhouette"
+    },
+    "eyes": {
+      "count": 2,
+      "construction": "separate spherical eyes with layered iris/cornea treatment",
+      "size": "very large"
+    },
+    "beak": {
+      "construction": "separate upper/lower or hinged stylized beak",
+      "color_family": "orange"
+    },
+    "wings": {
+      "count": 2,
+      "state_v1": "folded",
+      "future_use": "simple gesture controls"
+    },
+    "feet": {
+      "count": 2,
+      "toes_per_foot": 4,
+      "forward_toes": 3,
+      "rear_toes": 1,
+      "rule": "rear toe wraps behind perch"
+    },
+    "tail": {
+      "state_v1": "compact folded"
+    }
+  },
+  "feather_strategy": {
+    "approach": "hybrid stylized",
+    "body_surface": "clean primary volume",
+    "visible_layers": "large designed feather groups",
+    "avoid": "hundreds of individually simulated feathers"
+  },
+  "tech_elements": {
+    "forehead_symbol": {
+      "type": "network/node motif",
+      "emission": "subtle cyan"
+    },
+    "eyes": {
+      "motif": "subtle network pattern inside iris"
+    },
+    "body_shell": false
+  }
+}

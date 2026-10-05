@@ -1,0 +1,374 @@
+{
+  "schema_version": 2,
+  "milestone": "feathers_v01",
+  "authority": "00 brand/cream face; 07 folded silhouette and back/tail; 08 directed broad layers",
+  "leaf_rows": 18,
+  "leaf_cross_segments": 8,
+  "shell_thickness_m": 0.0012,
+  "surface_relief_m": 0.0025,
+  "root_offset_m": 0.0003,
+  "wing_root_R_m": [
+    0.085,
+    -0.018,
+    0.307
+  ],
+  "gesture_limit_degrees": 12,
+  "gesture_axis": "local Y, mirrored outward lift; shoulder flexes over 45mm",
+  "wing_layers": [
+    {
+      "id": "Lower",
+      "root_z": 0.304,
+      "tip_z": 0.137,
+      "centers": [
+        -0.85,
+        0,
+        0.85
+      ],
+      "angular_width": 0.63,
+      "sweep_radians": -0.65,
+      "color": "mid_blue"
+    },
+    {
+      "id": "Upper",
+      "root_z": 0.35,
+      "tip_z": 0.243,
+      "centers": [
+        -0.72,
+        0.12,
+        0.96
+      ],
+      "angular_width": 0.63,
+      "sweep_radians": -0.7,
+      "color": "deep_navy"
+    }
+  ],
+  "wing_accent_indices": [
+    4
+  ],
+  "back_layers": [
+    {
+      "id": "HeadUpper",
+      "root": [
+        0.032,
+        0.48
+      ],
+      "tip": [
+        0.02,
+        0.396
+      ],
+      "half_width": 0.027,
+      "color": "deep_navy"
+    },
+    {
+      "id": "HeadMiddle",
+      "root": [
+        0.048,
+        0.448
+      ],
+      "tip": [
+        0.045,
+        0.345
+      ],
+      "half_width": 0.027,
+      "color": "mid_blue"
+    },
+    {
+      "id": "HeadLower",
+      "root": [
+        0.028,
+        0.408
+      ],
+      "tip": [
+        0.009,
+        0.318
+      ],
+      "half_width": 0.03,
+      "color": "deep_navy"
+    },
+    {
+      "id": "BodyUpper",
+      "root": [
+        0.018,
+        0.322
+      ],
+      "tip": [
+        0.014,
+        0.24
+      ],
+      "half_width": 0.026,
+      "color": "mid_blue"
+    },
+    {
+      "id": "BodyMiddle",
+      "root": [
+        0.04,
+        0.29
+      ],
+      "tip": [
+        0.038,
+        0.191
+      ],
+      "half_width": 0.025,
+      "color": "deep_navy"
+    },
+    {
+      "id": "BodyLower",
+      "root": [
+        0.026,
+        0.245
+      ],
+      "tip": [
+        0.015,
+        0.132
+      ],
+      "half_width": 0.026,
+      "color": "mid_blue"
+    }
+  ],
+  "chest_layers": [
+    {
+      "id": "CreamUpper",
+      "root": [
+        0.02,
+        0.334
+      ],
+      "tip": [
+        0.015,
+        0.258
+      ],
+      "half_width": 0.025,
+      "color": "cream"
+    },
+    {
+      "id": "CreamMiddle",
+      "root": [
+        0.026,
+        0.294
+      ],
+      "tip": [
+        0.008,
+        0.235
+      ],
+      "half_width": 0.021,
+      "color": "cream"
+    },
+    {
+      "id": "CreamLower",
+      "root": [
+        0.025,
+        0.254
+      ],
+      "tip": [
+        0.006,
+        0.2
+      ],
+      "half_width": 0.019,
+      "color": "cream"
+    },
+    {
+      "id": "Orange",
+      "root": [
+        0.077,
+        0.326
+      ],
+      "tip": [
+        0.04,
+        0.252
+      ],
+      "half_width": 0.012,
+      "color": "orange_reference"
+    },
+    {
+      "id": "Flank",
+      "root": [
+        0.084,
+        0.277
+      ],
+      "tip": [
+        0.067,
+        0.163
+      ],
+      "half_width": 0.022,
+      "color": "mid_blue"
+    }
+  ],
+  "tail_layers": [
+    {
+      "id": "Center",
+      "root": [
+        0,
+        0.194
+      ],
+      "tip": [
+        0,
+        0.041
+      ],
+      "half_width": 0.024,
+      "color": "mid_blue",
+      "depth_offset_m": -0.003
+    },
+    {
+      "id": "Inner",
+      "root": [
+        0.016,
+        0.193
+      ],
+      "tip": [
+        0.02,
+        0.057
+      ],
+      "half_width": 0.022,
+      "color": "mid_blue",
+      "depth_offset_m": -0.0015
+    },
+    {
+      "id": "Outer",
+      "root": [
+        0.025,
+        0.194
+      ],
+      "tip": [
+        0.044,
+        0.089
+      ],
+      "half_width": 0.022,
+      "color": "deep_navy",
+      "depth_offset_m": 0
+    }
+  ],
+  "tail_back_profile_z_y_m": [
+    [
+      0.039,
+      -0.134
+    ],
+    [
+      0.09,
+      -0.135
+    ],
+    [
+      0.165,
+      -0.107
+    ],
+    [
+      0.215,
+      -0.07
+    ]
+  ],
+  "face_layers": [
+    {
+      "id": "Outer",
+      "root": [
+        0.102,
+        0.457
+      ],
+      "tip": [
+        0.114,
+        0.367
+      ],
+      "half_width": 0.009,
+      "depth_profile_m": [
+        0.035,
+        0.051,
+        0.055,
+        0.048,
+        0.033
+      ],
+      "cross_depth_slope_m": -0.003,
+      "color": "cream",
+      "curve_x_m": 0.019
+    },
+    {
+      "id": "Cheek",
+      "root": [
+        0.12,
+        0.375
+      ],
+      "tip": [
+        0.054,
+        0.34
+      ],
+      "half_width": 0.013,
+      "curve_z_m": -0.009,
+      "depth_profile_m": [
+        0.035,
+        0.055,
+        0.067,
+        0.073,
+        0.07
+      ],
+      "cross_depth_slope_m": 0.001,
+      "color": "cream"
+    },
+    {
+      "id": "Bridge",
+      "root": [
+        0.048,
+        0.347
+      ],
+      "tip": [
+        0.008,
+        0.304
+      ],
+      "half_width": 0.011,
+      "curve_z_m": -0.004,
+      "depth_profile_m": [
+        0.075,
+        0.08,
+        0.078,
+        0.073,
+        0.067
+      ],
+      "cross_depth_slope_m": 0,
+      "color": "cream"
+    }
+  ],
+  "construction": "Closed broad quad patches on primary surfaces; separately editable. Root and inter-layer embedding intentional; no simulation.",
+  "limits": "Geometry gesture API, final controls #23; combined rig/animation QA #20-24. Diagnostic palette; final materials #18-19.",
+  "central_layers": [
+    {
+      "id": "HeadCenter",
+      "root": [
+        0,
+        0.483
+      ],
+      "tip": [
+        0,
+        0.334
+      ],
+      "half_width": 0.026,
+      "color": "deep_navy",
+      "front": false,
+      "depth_offset_m": -0.00125
+    },
+    {
+      "id": "BodyCenter",
+      "root": [
+        0,
+        0.327
+      ],
+      "tip": [
+        0,
+        0.133
+      ],
+      "half_width": 0.026,
+      "color": "mid_blue",
+      "front": false,
+      "depth_offset_m": -0.00125
+    },
+    {
+      "id": "ChestCenter",
+      "root": [
+        0,
+        0.346
+      ],
+      "tip": [
+        0,
+        0.2
+      ],
+      "half_width": 0.028,
+      "color": "cream",
+      "front": true,
+      "depth_offset_m": -0.00125
+    }
+  ]
+}

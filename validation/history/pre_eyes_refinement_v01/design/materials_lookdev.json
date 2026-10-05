@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "milestone": "materials_v01",
+  "palette_source": "design/materials.json; sRGB colors converted before shader assignment",
+  "shader": {
+    "feather_roughness": 0.56, "cream_roughness": 0.64,
+    "sheen_weight": 0.18, "keratin_roughness": 0.3,
+    "perch_roughness": 0.3, "perch_metallic": 0.85,
+    "perch_anisotropic": 0.65, "emission_strength": 2.0,
+    "emission_srgb": "#55F7FF", "perch_srgb": "#AEB8C5",
+    "claw_srgb": "#111522", "grain_strength": 0.12,
+    "grain_distance_m": 0.000045
+  },
+  "chest_overrides": [
+    {"id":"CreamUpper", "root":[0.023,0.335], "tip":[0.015,0.257], "half_width":0.034, "color":"cream"},
+    {"id":"CreamMiddle", "root":[0.025,0.295], "tip":[0.008,0.231], "half_width":0.029, "color":"cream"},
+    {"id":"CreamLower", "root":[0.018,0.255], "tip":[0.002,0.197], "half_width":0.023, "color":"cream"},
+    {"id":"Orange", "root":[0.069,0.337], "tip":[0.023,0.247], "half_width":0.016, "color":"orange_reference"}
+  ],
+  "forehead": {
+    "hub_radius_m": 0.0048, "terminal_radius_m": 0.0018,
+    "hub_depth_m": 0.003, "node_depth_m": 0.0015, "seat_offset_m": 0.0002,
+    "link_radius_m": 0.00055, "link_samples": 9,
+    "nodes": {
+      "Hub":[0.0,0.470], "Top":[0.0,0.491], "Bottom":[0.0,0.457],
+      "Inner_L":[-0.012,0.480], "Inner_R":[0.012,0.480],
+      "Outer_L":[-0.024,0.489], "Outer_R":[0.024,0.489]
+    },
+    "links": {
+      "Top":["Hub","Top"], "Bottom":["Hub","Bottom"],
+      "Inner_L":["Hub","Inner_L"], "Inner_R":["Hub","Inner_R"],
+      "Outer_L":["Inner_L","Outer_L"], "Outer_R":["Inner_R","Outer_R"]
+    }
+  },
+  "perch_rings": [
+    {"id":"End_L", "axis":"X", "center":[-0.168,0.0,0.09], "radius_m":0.0185,"tube_m":0.0006,"support":"GRP_PerchBar"},
+    {"id":"End_R", "axis":"X", "center":[0.168,0.0,0.09], "radius_m":0.0185,"tube_m":0.0006,"support":"GRP_PerchBar"},
+    {"id":"Stem", "axis":"Z", "center":[0.0,0.0,0.02], "radius_m":0.014,"tube_m":0.0006,"support":"GRP_PerchStem"},
+    {"id":"Base", "axis":"Z", "center":[0.0,0.0,0.016], "radius_m":0.058,"tube_m":0.0005,"support":"GRP_PerchBase"}
+  ],
+  "scope": "Assigned non-eye lookdev and tech geometry; F01 chest finish. Eyes/F03=#19 and nostrils/F02=#40 remain open."
+}
