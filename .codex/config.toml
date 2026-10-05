@@ -1,0 +1,5 @@
+# Project-local Codex defaults for Owli.
+# The OpenRouter provider itself must be configured in the user-level
+# ~/.codex/config.toml; see docs/codex-openrouter.md.
+model = "deepseek/deepseek-v4.1-flash"
+model_reasoning_effort = "medium"
