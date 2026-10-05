@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "issue": 14,
+  "reviewer": "Codex: direct visual review of the four fixed views and approved references",
+  "status": "silhouette_frozen",
+  "scope": "coarse_volumes_face_placement_perched_pose",
+  "blocking_findings": [],
+  "nonblocking_followups": [
+    "Primary-volume seams and production topology: #15/#16",
+    "Final eyelids, cornea and layered eye shading: #16/#19",
+    "Upper/lower beak topology and motion: #17",
+    "Feather groups, chest accent integration: #6",
+    "Final claw anatomy and mechanical grip: #5",
+    "Final forehead/perch integration and lookdev: #18"
+  ],
+  "checks": [
+    {
+      "check": "Owli immediately reads as the same mascot as the original logo",
+      "result": "pass",
+      "reason": "Gro\u00dfe Navy/Cyan-Augen, creamfarbene Maske, orangefarbener Schnabel, kontrollierte warme Brustflanken und Stirn-Netzwerklandmarke erhalten die pr\u00e4genden Logo-Merkmale. Die weichere Brow-Linie ergibt eine ruhige neutrale Lesbarkeit; Gloss und Federtextur sind Folgearbeit.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_FRONT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_3Q_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "00_original_logo.png",
+          "rank": 1
+        },
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "check": "Head is dominant but not baby-like",
+      "result": "pass",
+      "reason": "Kopf samt B\u00fcscheln bleibt breiter als der Rumpf; Kopf und Rumpf teilen die Sitzh\u00f6he ann\u00e4hernd ausgewogen. Der vergr\u00f6\u00dferte Augenread wird durch tiefere Einbettung und kompaktere Unterk\u00f6rpermasse ausgeglichen, statt einen Baby-Ballkopf zu erzeugen.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_FRONT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_LEFT_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "check": "Both eyes are separate spherical/volumetric objects",
+      "result": "pass",
+      "reason": "BLK_Eye_L und BLK_Eye_R sind getrennte kugelf\u00f6rmige Meshes mit je 0,098 m Durchmesser. Front/3/4 zeigen zwei unabh\u00e4ngige Volumen; deren Ma\u00dfe und Tiefe sind am gespeicherten Blender-Modell gepr\u00fcft.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_FRONT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_3Q_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "08_parts_lookdev_technical.png",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "check": "White facial mask remains strongly readable",
+      "result": "pass",
+      "reason": "Beide creamfarbenen Maskenloben und die schmalere zentrale Verbindung umrahmen die Augen und bleiben in Front sowie 3/4 deutlich gegen Navy abgesetzt. Kleine seitliche Temple-N\u00e4hte sind eine sp\u00e4tere Integrationsaufgabe.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_FRONT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_3Q_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "00_original_logo.png",
+          "rank": 1
+        },
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "check": "Beak size and projection agree across front and profile",
+      "result": "pass",
+      "reason": "Der orangefarbene Schnabel hat in Front eine breite Basis und verj\u00fcngte Spitze; im Profil projiziert dieselbe grobe Form nach vorn/unten. Breite, H\u00f6he und Projektion bleiben gegen\u00fcber Augen und Maske kontrolliert. Ober-/Unterteilung und feinere Hook-Topologie folgen in #17.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_FRONT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_LEFT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_3Q_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "00_original_logo.png",
+          "rank": 1
+        },
+        {
+          "file": "08_parts_lookdev_technical.png",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "check": "Folded wing masses read clearly in side and back views",
+      "result": "pass",
+      "reason": "Zwei lange geschlossene Fl\u00fcgelmassen liegen in Profil und R\u00fccken am Rumpf an und laufen bis in die Sitzregion aus. Es gibt keine ausgebreiteten Flugfl\u00e4chen; die laterale H\u00fclle ist in allen Ansichten konsistent.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_LEFT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_BACK_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "check": "Tail is compact and centered",
+      "result": "pass",
+      "reason": "Der Schwanz liegt auf X=0, verj\u00fcngt sich symmetrisch und endet unterhalb der Stange. Das abgesenkte Ende korrigiert den zu hohen #13-Stand; der Rumpf bleibt die Hauptmasse. Er ist ein kompakter Einzelblock ohne Federf\u00e4cher.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_BACK_comparison.png",
+        "validation/reviews/blockout_v01/VAL_LEFT_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "check": "Each foot has 3 forward toes and 1 rear toe",
+      "result": "pass",
+      "reason": "Front zeigt je drei vordere Zehenguides; R\u00fccken zeigt je einen hinteren Guide neben dem Schwanz. Acht eindeutig benannte Meshes und die erneute Anatomiepr\u00fcfung belegen exakt 3+1 je Fu\u00df.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_FRONT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_BACK_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        },
+        {
+          "file": "08_parts_lookdev_technical.png",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "check": "Rear toe wraps behind the perch rather than duplicating a front claw",
+      "result": "pass",
+      "reason": "Profil und R\u00fccken zeigen die hinteren Zehen auf der R\u00fcckseite der Stange. Centerlines liegen strikt hinter deren Achse und laufen unter deren Mitte; sie duplizieren keine Frontzehe. Ausgearbeitete Krallen und Griffmechanik bleiben #5.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_LEFT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_BACK_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "08_parts_lookdev_technical.png",
+          "rank": 3
+        },
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "check": "Perch is visually secondary",
+      "result": "pass",
+      "reason": "Stange und Basis bleiben dunkel und schlicht; die bar-L\u00e4nge von 0,37 m rahmt die kompakte Eule, w\u00e4hrend Augen, Maske und B\u00fcschel die Hauptaufmerksamkeit tragen. Kameras, Licht und Ma\u00dfstab wurden nicht f\u00fcr diesen Eindruck verschoben.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_FRONT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_3Q_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        },
+        {
+          "file": "08_parts_lookdev_technical.png",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "check": "No fine feather detailing hides a silhouette problem",
+      "result": "pass",
+      "reason": "Alle sichtbaren Federbereiche sind glatte Hauptvolumen; zwei Brustflanken sind grobe Farbmassen, keine feinen Federlagen. Front, Profil und R\u00fccken zeigen die vollst\u00e4ndige Au\u00dfenh\u00fclle ohne Detailkaschierung.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_FRONT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_LEFT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_BACK_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        },
+        {
+          "file": "08_parts_lookdev_technical.png",
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "check": "No flight-specific complexity added",
+      "result": "pass",
+      "reason": "Gefaltete Fl\u00fcgel, zwei F\u00fc\u00dfe auf der Stange und ein kompakter Schwanz bilden ausschlie\u00dflich die Sitzversion. Es wurden weder Fluggeometrie noch Flug-Rig oder Feder-Simulation erg\u00e4nzt.",
+      "evidence": [
+        "validation/reviews/blockout_v01/VAL_LEFT_comparison.png",
+        "validation/reviews/blockout_v01/VAL_BACK_comparison.png"
+      ],
+      "references": [
+        {
+          "file": "07_turnaround_technical.png",
+          "rank": 2
+        }
+      ]
+    }
+  ],
+  "evidence_sha256": {
+    "design/proportions.json": "c0eb27fe15eabdf3af6c7943d0ef82766c6be31b395ceb62b2cb9255a33e4d45",
+    "validation/checklist.json": "8b5521619e6e64bdc61be387b52ac3cc60a4567d827b4f68bdcc7afccdd5e970",
+    "validation/reference_views.json": "b54fc4aa5b6bdf0ba07d7a96006ca207791b397f2374a465ede581855cb9d89f",
+    "design/reference_hierarchy.json": "e4e13b9c064462f6dce9716782b86818ecb87f5e41afeaa0a4760a74eb770e0e",
+    "design/character_spec.json": "55edc6c49d5bb1b3402805f95c5f549fd48839513a54f5098026df07982f326b",
+    "blender/scene/owli_blockout_v01.blend": "a48291158dbb959ccfe3fa947c1b4504d2b6b998d48e40f6b02b6fa583b3c04c",
+    "scripts/blender/10_blockout.py": "ee8554d5afcd3ee280b08c69bcaf8f9b44119e3e68d11842c50be02c0ebaa120",
+    "scripts/blender/legacy/40_feet_perch.py": "536ca72bf03a5a850a91210f785c32713c6d35ec2b6c65e482dc8b2871a443ae",
+    "scripts/blender/blockout_geometry.py": "1f0df4b2670bf02114a9135f2ae34166bd9f21bf234f34dd3d90dbed5e402b9f",
+    "validation/reviews/blockout_v01/contact_sheet.png": "b54543619dd6aa99c9f64b7390fbf6fda83bb9e9399a85e4eb574544a54bf96e",
+    "validation/reviews/blockout_v01/render_manifest.json": "481ec903f0c35974b8b9107334a6cf308b63fb93459db1b637f630c116430d0e",
+    "validation/reviews/blockout_v01/VAL_3Q.png": "cad348065c2cf89ffe3b96c3b5f23475466917becaec2b5672e8d5f694d0b0d9",
+    "validation/reviews/blockout_v01/VAL_3Q_comparison.png": "2ab690b09cf19e0a8fb8e355cb8eaaa36b8d6f4895abd7a2851495389a5be2a8",
+    "validation/reviews/blockout_v01/VAL_BACK.png": "b4456944605b0056dd06c0f4dda2fee6a80e6245918a06f52b484adb89113315",
+    "validation/reviews/blockout_v01/VAL_BACK_comparison.png": "2f50faf745bde1153d5f984736fa7cd9d651a2ab76bb80b6d387aad3b6d3fcc6",
+    "validation/reviews/blockout_v01/VAL_FRONT.png": "9d6c320032d2092b49107f3efcea8bd245b80a6f569e2af1dadfa29c3625371a",
+    "validation/reviews/blockout_v01/VAL_FRONT_comparison.png": "90bb2d20d087a46c9b14cb299fc546b6842d5a3090dd66f65a260e12f5a1b4b5",
+    "validation/reviews/blockout_v01/VAL_LEFT.png": "8924163a4a4e141c8b487f29638bdbfd61132169f3656777e4a7d7206e5f3a58",
+    "validation/reviews/blockout_v01/VAL_LEFT_comparison.png": "803861e87420989ef62df9f98040912a22fdfd34b2fe6d9197545242656172aa",
+    "validation/reviews/blockout_v01/verification.json": "8fba17806dbaa57d22434a364cf69f3480d0742c7efc98c74c58c47f08280a8e",
+    "references/approved/00_original_logo.png": "d97c36505ae64d3d70b04f55b055cba84de1bfa7326daa91a556b87dae3d0c2e",
+    "references/approved/07_turnaround_technical.png": "b15a961ceadc50c9b226aefb981464461c5e049d0a18de5e969f454fc90259a1",
+    "references/approved/08_parts_lookdev_technical.png": "6438c5a11db515e6d73f72a9617d511839b407e1e6c7022b80aa475b2a362488",
+    "references/approved/01_beauty_3q_front.png": "348360038ba7bc25aed5334c7f9da4a717aaff16730b90ad46acb8be6f4bc924"
+  }
+}

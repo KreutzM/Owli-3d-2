@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "hierarchy": [
+    {
+      "rank": 1,
+      "file": "00_original_logo.png",
+      "role": "brand_identity",
+      "authority": [
+        "face_language",
+        "color_identity",
+        "character_tone"
+      ]
+    },
+    {
+      "rank": 2,
+      "file": "07_turnaround_technical.png",
+      "role": "primary_geometry_design",
+      "authority": [
+        "silhouette",
+        "profile",
+        "back",
+        "body_volume"
+      ]
+    },
+    {
+      "rank": 3,
+      "file": "08_parts_lookdev_technical.png",
+      "role": "primary_parts_material_design",
+      "authority": [
+        "eyes",
+        "beak",
+        "forehead_symbol",
+        "feet",
+        "claws",
+        "feather_layers",
+        "materials",
+        "perch"
+      ]
+    },
+    {
+      "rank": 4,
+      "files": [
+        "01_beauty_3q_front.png",
+        "02_beauty_profile.png",
+        "03_beauty_front.png",
+        "04_beauty_back_3q.png"
+      ],
+      "role": "approved_style_support"
+    },
+    {
+      "rank": 5,
+      "files": [
+        "05_turnaround_v1.png",
+        "06_material_sheet_v1.png"
+      ],
+      "role": "legacy_support_only"
+    }
+  ],
+  "conflict_rule": "higher_rank_wins",
+  "metric_warning": "AI-generated design views are not metrically exact orthographic projections."
+}

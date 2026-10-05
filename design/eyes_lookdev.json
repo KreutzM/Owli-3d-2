@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "milestone": "eyes_v01",
+  "reference_authority": "00 face/color > 07 frozen volume > 08 eye construction",
+  "geometry": {
+    "angular_segments": 192,
+    "radial_segments": 32,
+    "pupil_angular_segments": 96,
+    "pupil_radial_segments": 8,
+    "iris_inner_projected_radius_m": 0.0108,
+    "pupil_angle_rad": 0.225,
+    "preserve_globe_cornea_envelope": true
+  },
+  "lid_integration": {
+    "eye_depth_offset_m": -0.006,
+    "lid_depth_falloff_power": 2,
+    "normals_policy": "radial_front_back_with_separate_caps",
+    "bridge_start_z_m": 0.377,
+    "bridge_end_z_m": 0.448,
+    "bridge_fade_in_m": 0.011,
+    "bridge_fade_out_m": 0.015,
+    "bridge_target_half_width_m": 0.0165,
+    "bridge_source": "design/review_fixes.json/bridge_rows_z_width_y_m"
+  },
+  "shader": {
+    "iris_roughness": 0.09,
+    "pupil_roughness": 0.065,
+    "globe_roughness": 0.10,
+    "cornea_roughness": 0.04,
+    "cornea_ior": 1.376,
+    "iris_emission_strength": 0.40,
+    "lower_arc_emission_addition": 0.65,
+    "iris_specular_ior_level": 0.10,
+    "cornea_reflection_gain": 32.0,
+    "reflection_core_min": 0.65,
+    "reflection_core_max": 1.60,
+    "reflection_concentration": 384.0,
+    "cornea_max_coat_weight": 0.10,
+    "iris_sector_frequency": 5.0,
+    "iris_sector_phase": 0.65,
+    "iris_sector_variation": 0.42,
+    "limbus_start": 0.955,
+    "upper_srgb": "#03103D",
+    "middle_srgb": "#064B93",
+    "lower_srgb": "#54EAF3",
+    "lower_light_srgb": "#E9FFF1",
+    "limbus_srgb": "#050C25",
+    "pupil_srgb": "#01030B",
+    "globe_srgb": "#040923",
+    "warm_srgb": "#FFC75D",
+    "network_srgb": "#54E4F6",
+    "network_opacity": 0.68,
+    "network_line_width_m": 0.00020,
+    "network_node_radius_m": 0.00085
+  },
+  "network": {
+    "points_xz_m": [[-0.032,-0.006],[-0.023,-0.010],[-0.014,-0.006],[-0.006,-0.016],[0.007,-0.019],[0.019,-0.011],[0.026,-0.017],[-0.027,-0.023],[-0.014,-0.025],[0.004,-0.030],[0.025,-0.003],[-0.005,0.020],[0.020,0.009]],
+    "links": [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[1,7],[3,8],[4,9],[5,10]],
+    "node_radius_weights": [0.7,1.8,0.8,1.2,0.8,1.6,0.65,0.6,0.9,0.55,0.8,0.85,0.7]
+  },
+  "decisions": [
+    "The broad navy illustrated eye region is shaded iris, not the literal black pupil. Keep neutral pupil centered for coherent aim.",
+    "Purposeful cage changes are four iris/pupil meshes, four lids and the existing #37 mask bridge. Both eye aim pivots move 6 mm back in Y; X/Z arrangement, relative globe/cornea envelopes, both masks, all feather seats, the other 90 non-eye full states and studio stay fixed. Four-view comparison justifies the reduced eye projection against 07/08.",
+    "Logo warm accent is restricted to the lower peripheral iris arc, never a full orange ring.",
+    "Cornea uses a thin Fresnel transparent/glossy coating for the frozen non-raytraced Eevee studio; real layered geometry remains editable. Full refractive raytracing is outside this fixed-studio milestone.",
+    "Restrained iris emission supports the branded luminous color under the unchanged neutral validation lighting; feather/body emission remains unchanged.",
+    "Network is an object-space procedural shader with parameterized segments/nodes; it moves with each eye and adds no collision geometry. Catchlights come from the real fixed area lights.",
+    "A parameterized Eevee ShaderToRGB gain32, luminance core response and concentration384 amplify and concentrate the actual glossy light response around view-dependent reflection directions to the five unchanged studio lights. Grazing coat is capped at0.10. No painted highlight positions; this artistic compensation is not a physical energy-conserving raytraced cornea.",
+    "The smaller eye projection shortens the lid mantle. Inner front/back rows follow the 6-mm eye depth correction; outer lid rows and mask attachments stay fixed. Authored radial front/back normals separate the closed endcaps to remove the artificial canthus shading seam.",
+    "The existing #37 bridge is widened locally to close actual medial head exposure. Its Y/Z, topology, thickness, lower and upper anchors stay fixed; measured gap coordinates and full gaze/beak probes determine the bounded width profile.",
+    "Fresh scene opens must call eyes_geometry.configure_lids(root); use eyes_geometry.set_blink(root, values) for visual poses so authored normals follow the actual deformed cages. Historical face helpers and files are unchanged."
+  ]
+}

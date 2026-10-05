@@ -1,5 +1,13 @@
 # Startplan für Goal #19 — Augenlookdev und F-03
 
+**Aktueller Zusatzauftrag:** Erneute Nutzer-Rückmeldung zu Brust/Schnabel/Augen;
+[Analyse](reviews/user-findings-2026-10-05.md) und aktualisiertes #40 beachten.
+Die erste lokale Augenabnahme wurde dadurch überholt und unverändert archiviert.
+Die neue Verfeinerung umfasst Reflexe, Irisvariation, Netzwerk und Lidintegration.
+Aktuelle Lieferung und separate Freigabe stehen in `eyes_v01/verification.json`
+und `review.json`; tatsächlichen PR-/Issue-Status in GitHub prüfen. F-01 benötigt
+weitere Brustnacharbeit in #40. Eine frühere Abnahme ersetzt die neue Prüfung nicht.
+
 Auftrag: [Issue #19](https://github.com/KreutzM/Owli-3d/issues/19), Parent #7,
 Epic #11. Erst auf der gelieferten Materialszene aus #18 starten. AGENTS und
 die acht Pflichtquellen in Reihenfolge, danach aktuelle Übergabe und das echte
@@ -57,7 +65,26 @@ kanonische Pixelvergleiche und vollständige Quellen-/Referenz-/Beleginventare.
 Relevante Gates, Tests, Compileall und Blender-Smoke ausführen. Issue #19 erst
 mit tatsächlicher Lieferung schließen und dann Container #7 bewerten.
 
-F-01 ist in #18 separat nachgewiesen. **F-02 Nasenlöcher bleibt ein zusätzlicher
+Die F-01-Teilverbesserung aus #18 ist historisch nachgewiesen; die erneute
+Brust-Rückmeldung bleibt offen. **F-02 Nasenlöcher bleibt ein zusätzlicher
 Geometrieauftrag in #40** und muss vor #20 erledigt werden. #40 erst nach allen
 drei Findings am gemeinsamen Stand schließen. Vollständige Topologie/Rig/
 Animation und finaler V1-Avatar bleiben #20–#24.
+
+## Historischer lokaler Kandidat — 2026-10-05
+
+Der erste lokale `owli_eyes_v01.blend`-Kandidat besaß vier Actual-Worker und
+unabhängige Reviews. Er wurde nicht gemergt. Die neue Nutzer-Rückmeldung hält
+F-03 offen; seine frühere Abnahme ist keine finale Freigabe. Unveränderte Szene,
+Quellen und Belege sind unter `validation/history/pre_eyes_refinement_v01/`
+archiviert. Aktuelle optische/Formproben liegen ausschließlich in `tmp/goal19/`.
+Der neue reproduzierbare Ansatz verschiebt beide EyeAim-Pivots um −6 mm in Y,
+tapered die vier Lid-Cages zur unveränderten Außenkontur und verwendet explizite
+radiale Stylized-Corner-Normalen mit getrennten Kappen. Die vorhandene #37-Brücke
+wird nur in X verbreitert, um die mediale Lücke zu schließen; beide Masken bleiben
+exakt. Vier Iris/Pupil-Cages ändern sich weiter. Exakt 90 vollständige Nicht-Augen-
+Zustände, drei übrige Pivots und lokale Globe/Cornea-Formen samt Normalen bleiben
+erhalten. Keine globale Lockerung der Erhaltungsprüfung oder Kameraveränderung.
+13 separate visuelle Kriterien und tatsächliche 41 Blink-Normalenzustände ergänzen
+die vollständigen ursprünglichen Funktions-/Reproduktionsanforderungen.
+Nach tatsächlicher F-03-Lieferung folgt #40/F-01 und F-02, anschließend #20.

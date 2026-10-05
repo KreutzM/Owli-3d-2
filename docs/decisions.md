@@ -445,3 +445,80 @@ A 19-nanometer variation in old BVH shoulder metrics with exact cages uses a
 F-01 is resolved in #18; F-02 nostrils stays #40 and F-03 eyes stays #19. #40
 remains open until all three pass on a common current scene; nostril geometry
 must precede #20. Final rig binding/combined QA remain #20–24. No V1 approval.
+
+## 2026-10-05 — #19 optical eye finish and F-03
+
+00 > 07 > 08 was inspected. The large illustrated dark region is shaded iris,
+not the literal black pupil: measured projected ratio .74858 becomes 0.251854332.
+Neutral pupils stay centered for coherent aim; only four iris/pupil cages change.
+49-mm globes, 50.8-mm cornea, eye placement, lids/mask, all 95 non-eye full states and
+studio remain exact. Iris 192×32; smaller pupil 96×8 passes the unchanged adjacent/
+coplanar audit after an over-resolved tiny 192×32 pupil was rejected. No audit
+tolerance relaxation. All four fixed views evaluated each geometry iteration.
+
+Deep upper navy and curved bright blue/cyan lower crescent replace hard rings;
+a thin restricted lower warm arc follows logo 00 rather than adding an orange
+ring. Nine analytic local-space links/ten .65-mm nodes remain subtle and leave
+pupils clear. Four actually assigned separate shaders remain editable. Cornea
+IOR 1.376/roughness .04, BLENDED single Fresnel coating; its real area reflections
+receive explicit artistic Eevee ShaderToRGB gain 6. Iris lower emission .4+.65.
+These are documented fixed-studio stylizations, not energy-conserving raytraced
+refraction. Three broad area catches/stronger profile rim were assessed and
+accepted; no camera/light changes. V19-01/02/03 resolved through actual renders.
+
+Four independent Blender build/reload workers and separate final visual/technical
+reviews bind the delivered scene `8c1bcd9474281cc8c0509c50606016973db582f94771df25bdc30f505b76bc9b` and its sources/evidence.
+41 blink states, 164 actual-radius minima with 1.7776074357634466 mm minimum, ±12° aim,
+41 beak states, six gestures, 3+1 feet and eight contacts pass; all eight new eyes,
+51 FTH and 17 TECH meshes are explicit targets. 626 real historical Git/LFS anchors
+and 75 sources remain protected. F-01 preserved, F-03 fulfilled; F-02 nostrils
+remains #40 before #20. #7's #18/#19 lookdev is complete; full topology, rig,
+animation and final avatar remain #20–24.
+
+## 2026-10-05 — Renewed user findings supersede planned visual closure
+
+The user again reports chest color/belt appearance, absent nostrils and eye
+reference mismatch. Actual 00/07/08, all three four-view contact sheets and
+chest/eye details were rechecked, with separate visual/technical analyses.
+Main remains #18/e04afa9; #19 scene 8c1bcd94 is the delivered canonical-worktree stand; the earlier 88d10dd7 candidate is archived.
+The earlier F-01/F-03 partial improvements and bound reviews remain intact,
+but they do not resolve this renewed feedback. F-01 is reopened in #40;
+F-02/F-03 remain open. Refine smooth narrow chest strips and eye reflections,
+rims, iris variation/network; add actual paired nostril recesses before #20.
+#19/#7/#40 remain open. No merge or final V1 acceptance is implied by the
+earlier planned delivery text. See reviews/user-findings-2026-10-05.md and #40.
+
+## 2026-10-05 — Revised F-03 optical and lid integration recipe
+
+The first unmerged candidate and its sources/reviews are retained byte-exact in
+pre_eyes_refinement_v01, with 145 code-owned bindings. Its broad gray reflections,
+uniform crescent/network and inflated cream rim did not close renewed feedback.
+New fixed-studio optical response concentrates actual reflected area radiance via
+real reflection directions and a documented stylized power384 kernel/gain32,
+radiance threshold .65–1.60 and front Fresnel cap .10. Local iris angle variation
+and a branched 13-node/10-link network replace the uniform/chain-like treatment.
+No synthetic catchlight texture, new studio or new material role is introduced.
+
+Depth/profile comparison against 07/08 justified moving both eyes −6 mm in Y,
+with a quadratic matching lid taper to unchanged outer bounds. Four lid cages
+retain topology; authored radial corner normals (back reversed, endcaps separate)
+remove misleading shaded ring edges. These are intentional shading normals,
+not exact geometric normals after taper. All41 blink states recompute them;
+actual ordered hashes/audits and neutral restoration are now independently bound.
+
+Mask experiments and an initial bridge probe incorrectly assumed obsolete #16
+cage layouts. All were rejected, none was applied to production. The accepted
+method derives the actual #37 41×21 front/back bridge rows from review_fixes.json,
+widening X alone toward16.5mm over z=.377–.448 with smooth lower11mm/upper15mm fades.
+The too-wide alternative collided during ±12° gaze and was rejected under the
+unchanged tolerance. Both actual masks remain exact; targeted bridge5 closes the
+medial navy gap without that collision. Independent candidate/reproduction visual
+reviews cover all four fixed views; actual reproduced arrays match bridge5.
+
+Exactly nine local cages and two depth pivots are explicit bounded changes;
+90 complete non-eye states, three other pivots and local Globe/Cornea envelopes
+and normals remain exact. The original optical/function/CI/delivery requirements
+remain; added F-03 criteria and 41×4 normal-state checks strengthen acceptance.
+Canonical four-worker publication and independent final artifact-bound reviews
+must precede integration and #19 closure. F-01 chest colors and F-02 nostrils
+remain #40, with common-scene confirmation before #20. No V1 acceptance.

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "milestone": "beak_v01",
+  "source": "evaluated frozen design/proportions.json beak loft; closed union retains its approved envelope",
+  "split_plane_point_m": [0.0, 0.105, 0.386],
+  "split_plane_normal": [0.0, 1.2, 1.0],
+  "closed_seam_gap_m": 0.0004,
+  "lower_pivot_m": [0.0, 0.095, 0.398],
+  "opening_axis": "local X; negative rotation opens the lower jaw downward",
+  "maximum_open_degrees": 18.0,
+  "open_samples": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "minimum_mask_clearance_m": 0.0003,
+  "interior_swatch": "deep_navy",
+  "notes": [
+    "Upper hooked tip stays stationary; the lower posterior jaw rotates behind it.",
+    "A tilted split preserves the frozen front/profile outer volume; planar interior caps close each rigid part.",
+    "Opening API is a geometry probe, not a final animatable controller or speech system.",
+    "Coordinates are meters at the 0.45 m reference scale; all geometry and pivot scale uniformly."
+  ]
+}

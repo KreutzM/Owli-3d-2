@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "coordinate_system": "X left/right, +Y front, Z up; meters",
+  "camera_policy": "Fixed cameras; report out-of-frame geometry, never auto-fit",
+  "render": {
+    "resolution": 1024,
+    "samples": 64,
+    "format": "PNG",
+    "color_mode": "RGBA",
+    "color_depth": "8",
+    "view_transform": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0,
+    "film_transparent": false
+  },
+  "world": {"name": "OWLI_ValidationWorld", "color_linear": [0.075, 0.075, 0.075], "strength": 0.5},
+  "lighting": {
+    "policy": "Fixed neutral white area lights; no view-dependent relighting",
+    "target": [0.0, 0.0, 0.27],
+    "lights": [
+      {"name": "VAL_KEY_FRONT", "location": [-0.65, 0.8, 1.0], "energy_w": 5.0, "size_m": 0.65},
+      {"name": "VAL_KEY_BACK", "location": [0.65, -0.8, 1.0], "energy_w": 5.0, "size_m": 0.65},
+      {"name": "VAL_FILL_FRONT", "location": [0.7, 0.55, 0.5], "energy_w": 2.0, "size_m": 0.6},
+      {"name": "VAL_FILL_BACK", "location": [-0.7, -0.55, 0.5], "energy_w": 2.0, "size_m": 0.6},
+      {"name": "VAL_TOP", "location": [0.0, 0.0, 1.2], "energy_w": 2.0, "size_m": 0.7}
+    ],
+    "color_linear": [1.0, 1.0, 1.0]
+  },
+  "framing": {
+    "minimum_margin": 0.02,
+    "geometry_collections": ["BLOCKOUT", "PRIMARY_FORM", "EYES", "BEAK", "WINGS", "FEATHERS", "FEET", "CLAWS", "PERCH", "TECH"],
+    "rule": "Project evaluated geometry bounds; fail on image/depth clipping. No automatic camera changes."
+  },
+  "shared_references": [
+    {"file": "00_original_logo.png", "rank": 1, "authority": "brand, face language and color"},
+    {"file": "08_parts_lookdev_technical.png", "rank": 3, "authority": "parts, feet/claws, materials; 3+1 specification overrides ambiguous drawings"}
+  ],
+  "views": [
+    {
+      "name": "VAL_FRONT",
+      "type": "orthographic_design_validation",
+      "reference": "07_turnaround_technical.png",
+      "reference_rank": 2,
+      "reference_panel": {"label": "FRONT", "crop_px": [10, 15, 365, 665]},
+      "camera": {"location": [0.0, 1.6, 0.30], "target": [0.0, 0.0, 0.27], "projection": "ORTHO", "ortho_scale": 0.58, "lens_mm": 65.0, "clip_start_m": 0.01, "clip_end_m": 100.0},
+      "purpose": [
+        "silhouette",
+        "eye spacing",
+        "chest symmetry",
+        "feet"
+      ]
+    },
+    {
+      "name": "VAL_LEFT",
+      "type": "orthographic_design_validation",
+      "reference": "07_turnaround_technical.png",
+      "reference_rank": 2,
+      "reference_panel": {"label": "LEFT SIDE", "crop_px": [380, 15, 710, 665]},
+      "camera": {"location": [-1.6, 0.0, 0.30], "target": [0.0, 0.0, 0.27], "projection": "ORTHO", "ortho_scale": 0.58, "lens_mm": 65.0, "clip_start_m": 0.01, "clip_end_m": 100.0},
+      "purpose": [
+        "head depth",
+        "beak projection",
+        "wing profile",
+        "rear toe"
+      ]
+    },
+    {
+      "name": "VAL_BACK",
+      "type": "orthographic_design_validation",
+      "reference": "07_turnaround_technical.png",
+      "reference_rank": 2,
+      "reference_panel": {"label": "BACK", "crop_px": [715, 15, 1065, 665]},
+      "camera": {"location": [0.0, -1.6, 0.30], "target": [0.0, 0.0, 0.27], "projection": "ORTHO", "ortho_scale": 0.58, "lens_mm": 65.0, "clip_start_m": 0.01, "clip_end_m": 100.0},
+      "purpose": [
+        "wing symmetry",
+        "tail",
+        "back feather layering"
+      ]
+    },
+    {
+      "name": "VAL_3Q",
+      "type": "perspective_style_validation",
+      "reference": "01_beauty_3q_front.png",
+      "reference_rank": 4,
+      "reference_panel": {"label": "3/4 FRONT BEAUTY", "crop_px": null},
+      "geometry_reference": {"file": "07_turnaround_technical.png", "rank": 2, "label": "3/4 FRONT", "crop_px": [1070, 15, 1440, 665]},
+      "camera": {"location": [1.15, 1.15, 0.36], "target": [0.0, 0.0, 0.27], "projection": "PERSP", "ortho_scale": 0.58, "lens_mm": 65.0, "sensor_width_mm": 36.0, "sensor_fit": "AUTO", "clip_start_m": 0.01, "clip_end_m": 100.0},
+      "purpose": [
+        "character read",
+        "volume",
+        "eye depth",
+        "perch grip"
+      ]
+    }
+  ]
+}

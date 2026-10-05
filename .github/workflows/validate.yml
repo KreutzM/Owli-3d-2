@@ -25,5 +25,6 @@ jobs:
       - run: python scripts/project.py validate
       - run: python scripts/feathers_gate.py
       - run: python scripts/materials_gate.py
+      - run: python scripts/eyes_gate.py
       - run: python -m compileall -q scripts
       - run: python -m unittest discover -s tests -v

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "milestone": "eyes_v01",
+  "reference_authority": "00 face/color > 07 frozen volume > 08 eye construction",
+  "geometry": {
+    "angular_segments": 192,
+    "radial_segments": 32,
+    "pupil_angular_segments": 96,
+    "pupil_radial_segments": 8,
+    "iris_inner_projected_radius_m": 0.0108,
+    "pupil_angle_rad": 0.225,
+    "preserve_globe_cornea_envelope": true
+  },
+  "shader": {
+    "iris_roughness": 0.09,
+    "pupil_roughness": 0.065,
+    "globe_roughness": 0.10,
+    "cornea_roughness": 0.04,
+    "cornea_ior": 1.376,
+    "iris_emission_strength": 0.40,
+    "lower_arc_emission_addition": 0.65,
+    "iris_specular_ior_level": 0.10,
+    "cornea_reflection_gain": 6.0,
+    "upper_srgb": "#03103D",
+    "middle_srgb": "#075BAC",
+    "lower_srgb": "#54EAF3",
+    "lower_light_srgb": "#E9FFF1",
+    "limbus_srgb": "#050C25",
+    "pupil_srgb": "#01030B",
+    "globe_srgb": "#040923",
+    "warm_srgb": "#FFC75D",
+    "network_srgb": "#54E4F6",
+    "network_opacity": 0.42,
+    "network_line_width_m": 0.00022,
+    "network_node_radius_m": 0.00065
+  },
+  "network": {
+    "points_xz_m": [[-0.031,-0.012],[-0.024,-0.018],[-0.016,-0.015],[-0.009,-0.022],[0.001,-0.024],[0.012,-0.023],[0.020,-0.017],[0.027,-0.013],[-0.014,-0.006],[0.021,-0.006]],
+    "links": [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[2,8],[6,9]]
+  },
+  "decisions": [
+    "The broad navy illustrated eye region is shaded iris, not the literal black pupil. Keep neutral pupil centered for coherent aim.",
+    "Only four iris/pupil cages change; all eye centers, globe/cornea envelopes, mask/lids and studio stay fixed.",
+    "Logo warm accent is restricted to the lower peripheral iris arc, never a full orange ring.",
+    "Cornea uses a thin Fresnel transparent/glossy coating for the frozen non-raytraced Eevee studio; real layered geometry remains editable. Full refractive raytracing is outside this fixed-studio milestone.",
+    "Restrained iris emission supports the branded luminous color under the unchanged neutral validation lighting; feather/body emission remains unchanged.",
+    "Network is an object-space procedural shader with parameterized segments/nodes; it moves with each eye and adds no collision geometry. Catchlights come from the real fixed area lights.",
+    "A parameterized Eevee ShaderToRGB gain amplifies the actual glossy cornea light response in the frozen low-energy studio, retaining view-dependent reflections rather than painting highlight positions. This artistic compensation is not a physical energy-conserving raytraced cornea."
+  ]
+}

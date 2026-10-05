@@ -1,0 +1,99 @@
+{
+  "gate_version": 2,
+  "milestone": "eyes_v01",
+  "status": "eyes_lookdev_accepted",
+  "scene_sha256": "88d10dd7fba31ecec7116002c2ec40934d5c0e820c77dd6aecc79d34b4e093cc",
+  "verification_sha256": "ea9ee7ed4161744a51cf3432c45fd5c1dfb3914a39537b5e39ac123185cd5fa4",
+  "reference_authority": [
+    {
+      "file": "00_original_logo.png",
+      "rank": 1
+    },
+    {
+      "file": "07_turnaround_technical.png",
+      "rank": 2
+    },
+    {
+      "file": "08_parts_lookdev_technical.png",
+      "rank": 3
+    }
+  ],
+  "views": {
+    "VAL_FRONT": {
+      "status": "pass",
+      "reason": "Friendly small literal pupils, dark upper iris and curved bright cyan lower arc match 00/08; restrained warm bottom rim and readable subtle network. Cream face/eyes remain primary."
+    },
+    "VAL_LEFT": {
+      "status": "pass",
+      "reason": "Original convex globe/cornea projection and frozen eye arrangement remain; smooth glossy edge is intentionally stronger than painted08 under the fixed studio. Mask/beak/3+1 rear grip silhouette preserved."
+    },
+    "VAL_BACK": {
+      "status": "pass",
+      "reason": "Eye lookdev introduces no rear feature or non-eye cage/material change; accepted wing/tail/tuft silhouette and secondary perch remain preserved."
+    },
+    "VAL_3Q": {
+      "status": "pass",
+      "reason": "Layered dome and small coherent dark pupils remain friendly; real area highlights, curved lower iris and subtle network have spatial read. No camera/lighting changes hide geometry."
+    }
+  },
+  "criteria": {
+    "separate_optical_layers": {
+      "status": "pass",
+      "reason": "Fresh Blender inspection confirms separate editable Globe/Iris/Pupil/Cornea on both original eye pivots; actual radial gaps and no layer intersections. Fixed front/profile/3Q show glossy convex depth."
+    },
+    "deep_blue_cyan_lower_iris": {
+      "status": "pass",
+      "reason": "Compared actual 00/08 and final eye board: upper navy, blue/cyan depth and curved pale lower crescent replace matte hard rings. Lower warm accent remains narrow and follows logo authority."
+    },
+    "dark_readable_pupils": {
+      "status": "pass",
+      "reason": "Actual projected ratio .251854332 replaces .74858; small black pupils remain distinct within dark shaded iris and preserve coherent neutral/gaze direction."
+    },
+    "controlled_cornea_catchlights": {
+      "status": "pass",
+      "reason": "Final front/profile/3Q and independent aim renders show smooth real-light view-dependent cornea highlights. Three broad fixed-area catches and artistic Eevee gain6/profile rim are explicitly accepted limits; no painted catchlight positions or studio change."
+    },
+    "subtle_iris_network": {
+      "status": "pass",
+      "reason": "Nine parameterized analytic links and ten .65-mm nodes are visible in lower inner iris at eye-detail scale without obscuring pupils; object-space mapping follows actual aim pivots and adds no collision geometry."
+    },
+    "F03_ratio_projection_rims": {
+      "status": "pass",
+      "reason": "00/08 detail comparison, measured pupil/iris ratio and all four final views justify four Iris/Pupil cage changes. Original centers, 49-mm globes and 50.8-mm cornea stay exact; profile remains convex and hard band colors become a soft dark limbus. Shader alone was not assumed sufficient."
+    },
+    "friendly_mask_four_views": {
+      "status": "pass",
+      "reason": "Primary and independent visual review inspected actual Front/Left/Back/3Q. Bright cream face and friendly eyes remain readable; non-eye silhouettes/materials, perched pose and 3+1 feet are preserved."
+    },
+    "material_values_justified": {
+      "status": "pass",
+      "reason": "Four actual assigned graphs use metallic0, roughness .04-.10 and IOR1.376. Documented thin Fresnel BLENDED coating, real-reflection gain6 and restrained .4+.65 lower-iris emission justify the fixed non-raytraced Eevee stylization."
+    },
+    "function_history_preserved": {
+      "status": "pass",
+      "reason": "Four real workers, full repeat/graph checks and exact canonical data/RGBA; actual blink/gaze/beak/gestures/3+1 contacts, all eight eye targets, unchanged 95 full non-eye states and626 actual Git/LFS anchors. Separate final independent reviews confirm measured preservation and no blocking19 finding."
+    }
+  },
+  "blocking_findings": [],
+  "evidence_sha256": {
+    "VAL_3Q.png": "2222a4add8b100327ced25818d118b60e4c4cf49d9b9c9e23240514e566742c4",
+    "VAL_3Q_comparison.png": "f2828b5b560048e15830730ecd6d7036c8fd9ae811aee9b4a052eb3833f9daf5",
+    "VAL_BACK.png": "bc25256bb2cecac7eaeca921b81c2db87866f3759ebbd46158e7c978fc2cf6a8",
+    "VAL_BACK_comparison.png": "b6e595a0b19106f2f919ac5d8cd5a0cc17d09ba64657c13186f0a607862cca3c",
+    "VAL_FRONT.png": "701c585519439248f930aba20cd031c610063c8e91c9c7e67a4543b21f76a058",
+    "VAL_FRONT_comparison.png": "6be10f3b2bdd782a918af81604a664471f0cd15580e845a2ef6778c859005b59",
+    "VAL_LEFT.png": "410d90a5f4e974960b30637b1362992773e5850acac4001761ac58e35add1cfc",
+    "VAL_LEFT_comparison.png": "834dfe5506829e3e0443dd5c3410805b9dc6cab4f78661474837e7120c12d51f",
+    "build_checks.json": "8d595fab17589005ddc27ab805f41e70b4dba2150f8aac3f0cb84da5943ee5e9",
+    "contact_sheet.png": "5061fcfa851519e481f9e4f62d0f290820b5e7fe653c555cd7a21be3001e831a",
+    "eyes_before_after.png": "d59cf7808fcdab40b9133beb35d5b1b17a8a2ee40e92fe58fbb480c0058b0fa2",
+    "independent-technical-evidence.json": "b19079b054d31cfc1d10ebf11c954e9531b8d0c7e61c01f74c7d232c894260b5",
+    "independent-technical-review.md": "29d0f56caf4f9838f2402935775f7bfd5a6dd54504998489d6b795283e03a54d",
+    "independent-visual-review.md": "7bf8962a6f7baba681d41df7ede8f4a1fe8b1a49b5869ddb19e7dfa61fd352b0",
+    "reload_a_checks.json": "a467f65c2ae18fd569b252074e57dacbb929ca425206817a9c0734325cf88768",
+    "reload_b_checks.json": "7739d5c589b45a51ce2d6b4da602761edd7c246779e5ab4d3cb87a2a29883dce",
+    "report.md": "551477e71ecf39da94a8f991cf5d29317bfc73cc4d3ff0745a53bfbf6433b96a",
+    "saved_build_checks.json": "ac0b7ec38f413027a1d6947ea08531b30c6357b5426845785c2b07f6c5a290a1",
+    "verification.json": "ea9ee7ed4161744a51cf3432c45fd5c1dfb3914a39537b5e39ac123185cd5fa4"
+  }
+}
