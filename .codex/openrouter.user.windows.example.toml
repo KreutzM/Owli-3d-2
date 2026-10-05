@@ -1,0 +1,11 @@
+# Merge this block into %USERPROFILE%\.codex\config.toml on Windows.
+# Do not commit OPENROUTER_API_KEY; Codex reads it from the environment.
+
+[model_providers.openrouter]
+name = "OpenRouter"
+base_url = "https://openrouter.ai/api/v1"
+wire_api = "responses"
+
+[model_providers.openrouter.auth]
+command = "powershell"
+args = ["-NoProfile", "-Command", "Write-Output $env:OPENROUTER_API_KEY"]
